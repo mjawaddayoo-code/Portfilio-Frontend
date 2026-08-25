@@ -9,7 +9,6 @@ import Dashboard from './pages/admin/Dashboard';
 import AdminProjects from './pages/admin/AdminProjects';
 import AdminMessages from './pages/admin/AdminMessages';
 import AdminSkills from './pages/admin/AdminSkills';
-import AdminExperience from './pages/admin/AdminExperience';
 import AdminEducation from './pages/admin/AdminEducation';
 import AdminCertificates from './pages/admin/AdminCertificates';
 import AdminServices from './pages/admin/AdminServices';
@@ -35,8 +34,6 @@ function App() {
         <Route path="/admin/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
         <Route path="/admin/projects" element={<ProtectedRoute><AdminProjects /></ProtectedRoute>} />
         <Route path="/admin/messages" element={<ProtectedRoute><AdminMessages /></ProtectedRoute>} />
-        <Route path="/admin/skills" element={<ProtectedRoute><AdminSkills /></ProtectedRoute>} />
-        <Route path="/admin/experience" element={<ProtectedRoute><AdminExperience /></ProtectedRoute>} />
         <Route path="/admin/education" element={<ProtectedRoute><AdminEducation /></ProtectedRoute>} />
         <Route path="/admin/certificates" element={<ProtectedRoute><AdminCertificates /></ProtectedRoute>} />
         <Route path="/admin/services" element={<ProtectedRoute><AdminServices /></ProtectedRoute>} />

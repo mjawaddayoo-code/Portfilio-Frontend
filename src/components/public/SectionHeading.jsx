@@ -6,15 +6,27 @@ const SectionHeading = ({ eyebrow, title, description, align = 'left' }) => (
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, margin: '-80px' }}
     transition={{ duration: 0.5 }}
-    className={align === 'center' ? 'mx-auto max-w-2xl text-center' : 'max-w-xl'}
+    className={
+      align === 'center'
+        ? 'mx-auto w-full max-w-2xl text-center'
+        : 'w-full'
+    }
   >
     {eyebrow && (
       <span className="eyebrow rounded-full bg-indigo-50 px-3 py-1">
         {eyebrow}
       </span>
     )}
-    <h2 className="mt-3 text-3xl font-bold text-ink sm:text-4xl">{title}</h2>
-    {description && <p className="mt-3 text-base leading-relaxed text-muted">{description}</p>}
+
+    <h2 className="mt-3 text-3xl font-bold text-ink sm:text-4xl">
+      {title}
+    </h2>
+
+    {description && (
+      <p className="mt-3 max-w-4xl text-base leading-relaxed text-muted">
+        {description}
+      </p>
+    )}
   </motion.div>
 );
 

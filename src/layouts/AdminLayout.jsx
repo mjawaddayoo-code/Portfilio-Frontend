@@ -22,7 +22,6 @@ const NAV = [
   { to: '/admin/projects', label: 'Projects', icon: FolderKanban },
   { to: '/admin/messages', label: 'Messages', icon: Inbox },
   { to: '/admin/skills', label: 'Skills', icon: Boxes },
-  { to: '/admin/experience', label: 'Experience', icon: Briefcase },
   { to: '/admin/education', label: 'Education', icon: GraduationCap },
   { to: '/admin/certificates', label: 'Certificates', icon: Award },
   { to: '/admin/services', label: 'Services', icon: Sparkles },

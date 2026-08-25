@@ -4,7 +4,6 @@ import Hero from '../../components/public/Hero';
 import About from '../../components/public/About';
 import Skills from '../../components/public/Skills';
 import Projects from '../../components/public/Projects';
-import Experience from '../../components/public/Experience';
 import Certificates from '../../components/public/Certificates';
 import Education from '../../components/public/Education';
 import Services from '../../components/public/Services';
@@ -15,7 +14,6 @@ const Home = () => {
   const [data, setData] = useState({
     skills: [],
     projects: [],
-    experience: [],
     education: [],
     services: [],
     certificates: [],
@@ -23,7 +21,6 @@ const Home = () => {
   const [loading, setLoading] = useState({
     skills: true,
     projects: true,
-    experience: true,
     education: true,
     services: true,
     certificates: true,
@@ -33,7 +30,6 @@ const Home = () => {
     const endpoints = [
       ['skills', '/skills'],
       ['projects', '/projects'],
-      ['experience', '/experience'],
       ['education', '/education'],
       ['services', '/services'],
       ['certificates', '/certificates'],
@@ -56,7 +52,6 @@ const Home = () => {
           <About profile={profile} />
           <Skills skills={data.skills} loading={loading.skills} />
           <Projects projects={data.projects} loading={loading.projects} />
-          <Experience experience={data.experience} loading={loading.experience} />
           <Certificates certificates={data.certificates} loading={loading.certificates} />
           <Education education={data.education} loading={loading.education} />
           <Services services={data.services} loading={loading.services} />

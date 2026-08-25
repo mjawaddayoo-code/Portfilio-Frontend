@@ -25,7 +25,6 @@ const CARDS = [
   { key: 'unreadMessages', label: 'Unread Messages', icon: MailWarning, gradient: 'from-rose-400 to-violet-500' },
   { key: 'totalSkills', label: 'Total Skills', icon: Boxes, gradient: 'from-cyan-400 to-indigo-500' },
   { key: 'totalServices', label: 'Total Services', icon: Sparkles, gradient: 'from-mint-400 to-indigo-500' },
-  { key: 'totalExperience', label: 'Total Experience', icon: Briefcase, gradient: 'from-amber-400 to-mint-400' },
   { key: 'totalCertificates', label: 'Total Certificates', icon: Award, gradient: 'from-violet-500 to-cyan-400' },
 ];
 
@@ -36,8 +35,7 @@ const Dashboard = () => {
   const fetchStats = async () => {
     setLoading(true);
     try {
-      const { data } = await api.get('/dashboard');
-      setStats(data.data);
+     
     } catch (error) {
       toast.error(getErrorMessage(error));
     } finally {

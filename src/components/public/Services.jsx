@@ -13,7 +13,7 @@ const Services = ({ services, loading }) => (
       <SectionHeading
         eyebrow="Services"
         title="How I can help."
-        description="Full-stack engineering, from the first component to the production database."
+        description="MERN-Stack Developer, from the first component to the production database."
         align="center"
       />
 

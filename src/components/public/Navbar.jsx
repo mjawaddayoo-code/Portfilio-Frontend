@@ -6,7 +6,6 @@ const LINKS = [
   { href: '#about', label: 'About', id: 'about' },
   { href: '#skills', label: 'Skills', id: 'skills' },
   { href: '#projects', label: 'Projects', id: 'projects' },
-  { href: '#experience', label: 'Experience', id: 'experience' },
   { href: '#certificates', label: 'Certificates', id: 'certificates' },
   { href: '#services', label: 'Services', id: 'services' },
   { href: '#contact', label: 'Contact', id: 'contact' },
@@ -77,9 +76,7 @@ const Navbar = ({ name = 'Muhammad Jawad', logoUrl }) => {
               {link.label}
             </a>
           ))}
-          {/* <a href="#contact" className="btn-primary !px-4 !py-2 ml-2 text-sm">
-            Let&apos;s talk
-          </a> */}
+         
         </div>
 
         <button
