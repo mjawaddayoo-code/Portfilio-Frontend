@@ -34,6 +34,7 @@ function App() {
         <Route path="/admin/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
         <Route path="/admin/projects" element={<ProtectedRoute><AdminProjects /></ProtectedRoute>} />
         <Route path="/admin/messages" element={<ProtectedRoute><AdminMessages /></ProtectedRoute>} />
+        <Route path="/admin/skills" element={<ProtectedRoute><AdminSkills /></ProtectedRoute>} />
         <Route path="/admin/education" element={<ProtectedRoute><AdminEducation /></ProtectedRoute>} />
         <Route path="/admin/certificates" element={<ProtectedRoute><AdminCertificates /></ProtectedRoute>} />
         <Route path="/admin/services" element={<ProtectedRoute><AdminServices /></ProtectedRoute>} />
